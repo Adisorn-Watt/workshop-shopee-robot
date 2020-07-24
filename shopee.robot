@@ -51,7 +51,7 @@ Test Template    ซื้อของจาก shopee
 
 เช็คชื่อร้านค้า
     Wait Until Element Contains    //*[@id="main"]/div/div[2]/div[2]/div[2]/div[3]/div[1]/div[1]/div/div[1]    pumper2500
-# Mind
+# มายจ้า
 กดปุ่ม "ซื้อสินค้า"
     Click Button    ซื้อสินค้า
 
