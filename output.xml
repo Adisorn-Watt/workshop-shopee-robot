@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200724 18:27:14.892" rpa="false">
-<suite id="s1" name="Shopee" source="C:\Users\phisonkha\Desktop\Allianz traning\Test workshop\workshop-shopee-robot\shopee.robot">
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200724 19:55:08.151" rpa="false">
+<suite id="s1" name="Shopee" source="C:\Users\adisornwat\Documents\7 Weeks Workshop Allianz\Workshop-ShopeeAutoBuy\workshop-shopee-robot\shopee.robot">
 <test id="s1-t1" name="ซื้อของจาก shopee ด้วยชื่อ phison">
 <kw name="ซื้อของจาก shopee">
 <arguments>
-<arg>phisonk@hotmail.com</arg>
-<arg>Phison1941</arg>
+<arg>soul-eater_evan@hotmail.com</arg>
+<arg>s0ul18plusS*</arg>
 </arguments>
 <kw name="เปิดเว็บ">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -14,10 +14,10 @@
 <arg>${URL}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200724 18:27:15.416" level="INFO">Opening browser 'chrome' to base url 'https://shopee.co.th/(Pre-Order)-Xiaomi-iHealth-Blood-Pressure-Monitor-2-%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%94%E0%B8%B1%E0%B8%99-%E0%B8%A3%E0%B8%B8%E0%B9%88%E0%B8%99-2-i.8172430.1307643368'.</msg>
-<status status="PASS" starttime="20200724 18:27:15.414" endtime="20200724 18:27:22.014"></status>
+<msg timestamp="20200724 19:55:08.615" level="INFO">Opening browser 'chrome' to base url 'https://shopee.co.th/(Pre-Order)-Xiaomi-iHealth-Blood-Pressure-Monitor-2-%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%94%E0%B8%B1%E0%B8%99-%E0%B8%A3%E0%B8%B8%E0%B9%88%E0%B8%99-2-i.8172430.1307643368'.</msg>
+<status status="PASS" starttime="20200724 19:55:08.614" endtime="20200724 19:55:17.948"></status>
 </kw>
-<status status="PASS" starttime="20200724 18:27:15.412" endtime="20200724 18:27:22.014"></status>
+<status status="PASS" starttime="20200724 19:55:08.614" endtime="20200724 19:55:17.949"></status>
 </kw>
 <kw name="กดเลือกภาษา">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
@@ -25,17 +25,17 @@
 <arguments>
 <arg>//*[@id="modal"]/div[1]/div[1]/div/div[3]/div[1]/button</arg>
 </arguments>
-<status status="PASS" starttime="20200724 18:27:22.015" endtime="20200724 18:27:23.062"></status>
+<status status="PASS" starttime="20200724 19:55:17.951" endtime="20200724 19:55:18.537"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="modal"]/div[1]/div[1]/div/div[3]/div[1]/button</arg>
 </arguments>
-<msg timestamp="20200724 18:27:23.063" level="INFO">Clicking element '//*[@id="modal"]/div[1]/div[1]/div/div[3]/div[1]/button'.</msg>
-<status status="PASS" starttime="20200724 18:27:23.062" endtime="20200724 18:27:26.715"></status>
+<msg timestamp="20200724 19:55:18.538" level="INFO">Clicking element '//*[@id="modal"]/div[1]/div[1]/div/div[3]/div[1]/button'.</msg>
+<status status="PASS" starttime="20200724 19:55:18.537" endtime="20200724 19:55:20.177"></status>
 </kw>
-<status status="PASS" starttime="20200724 18:27:22.014" endtime="20200724 18:27:26.716"></status>
+<status status="PASS" starttime="20200724 19:55:17.949" endtime="20200724 19:55:20.178"></status>
 </kw>
 <kw name="เช็คว่าชื่อของที่จะค้นหาตรงไหม">
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
@@ -44,9 +44,9 @@
 <arg>//*[@id="main"]/div/div[2]/div[2]/div[2]/div[2]/div[3]/div/div[1]/span</arg>
 <arg>(Pre-Order) Xiaomi iHealth Blood Pressure Monitor 2 - เครื่องวัดความดัน รุ่น 2</arg>
 </arguments>
-<status status="PASS" starttime="20200724 18:27:26.717" endtime="20200724 18:27:27.139"></status>
+<status status="PASS" starttime="20200724 19:55:20.179" endtime="20200724 19:55:20.838"></status>
 </kw>
-<status status="PASS" starttime="20200724 18:27:26.716" endtime="20200724 18:27:27.139"></status>
+<status status="PASS" starttime="20200724 19:55:20.178" endtime="20200724 19:55:20.838"></status>
 </kw>
 <kw name="เช็คราคาสินค้าในหน้าสินค้า">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
@@ -54,7 +54,7 @@
 <arguments>
 <arg>//*[@id="main"]/div/div[2]/div[2]/div[2]/div[2]/div[3]/div/div[3]/div/div/div/div/div/div</arg>
 </arguments>
-<status status="PASS" starttime="20200724 18:27:27.140" endtime="20200724 18:27:27.219"></status>
+<status status="PASS" starttime="20200724 19:55:20.840" endtime="20200724 19:55:21.331"></status>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
@@ -62,10 +62,10 @@
 <arg>//*[@id="main"]/div/div[2]/div[2]/div[2]/div[2]/div[3]/div/div[3]/div/div/div/div/div/div</arg>
 <arg>฿11,160</arg>
 </arguments>
-<msg timestamp="20200724 18:27:27.219" level="INFO">Verifying element '//*[@id="main"]/div/div[2]/div[2]/div[2]/div[2]/div[3]/div/div[3]/div/div/div/div/div/div' contains exact text '฿11,160'.</msg>
-<status status="PASS" starttime="20200724 18:27:27.219" endtime="20200724 18:27:27.678"></status>
+<msg timestamp="20200724 19:55:21.332" level="INFO">Verifying element '//*[@id="main"]/div/div[2]/div[2]/div[2]/div[2]/div[3]/div/div[3]/div/div/div/div/div/div' contains exact text '฿11,160'.</msg>
+<status status="PASS" starttime="20200724 19:55:21.331" endtime="20200724 19:55:21.422"></status>
 </kw>
-<status status="PASS" starttime="20200724 18:27:27.139" endtime="20200724 18:27:27.679"></status>
+<status status="PASS" starttime="20200724 19:55:20.839" endtime="20200724 19:55:21.422"></status>
 </kw>
 <kw name="เช็คชื่อร้านค้า">
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
@@ -74,9 +74,9 @@
 <arg>//*[@id="main"]/div/div[2]/div[2]/div[2]/div[3]/div[1]/div[1]/div/div[1]</arg>
 <arg>pumper2500</arg>
 </arguments>
-<status status="PASS" starttime="20200724 18:27:27.681" endtime="20200724 18:27:28.730"></status>
+<status status="PASS" starttime="20200724 19:55:21.424" endtime="20200724 19:55:21.581"></status>
 </kw>
-<status status="PASS" starttime="20200724 18:27:27.680" endtime="20200724 18:27:28.731"></status>
+<status status="PASS" starttime="20200724 19:55:21.423" endtime="20200724 19:55:21.581"></status>
 </kw>
 <kw name="กดปุ่ม &quot;ซื้อสินค้า&quot;">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -84,10 +84,10 @@
 <arguments>
 <arg>ซื้อสินค้า</arg>
 </arguments>
-<msg timestamp="20200724 18:27:28.732" level="INFO">Clicking button 'ซื้อสินค้า'.</msg>
-<status status="PASS" starttime="20200724 18:27:28.731" endtime="20200724 18:27:29.603"></status>
+<msg timestamp="20200724 19:55:21.583" level="INFO">Clicking button 'ซื้อสินค้า'.</msg>
+<status status="PASS" starttime="20200724 19:55:21.583" endtime="20200724 19:55:22.117"></status>
 </kw>
-<status status="PASS" starttime="20200724 18:27:28.731" endtime="20200724 18:27:29.604"></status>
+<status status="PASS" starttime="20200724 19:55:21.582" endtime="20200724 19:55:22.118"></status>
 </kw>
 <kw name="ใส่ข้อความ Username">
 <arguments>
@@ -99,10 +99,10 @@
 <arg>loginKey</arg>
 <arg>${Username}</arg>
 </arguments>
-<msg timestamp="20200724 18:27:29.608" level="INFO">Typing text 'phisonk@hotmail.com' into text field 'loginKey'.</msg>
-<status status="PASS" starttime="20200724 18:27:29.605" endtime="20200724 18:27:33.146"></status>
+<msg timestamp="20200724 19:55:22.120" level="INFO">Typing text 'soul-eater_evan@hotmail.com' into text field 'loginKey'.</msg>
+<status status="PASS" starttime="20200724 19:55:22.120" endtime="20200724 19:55:24.394"></status>
 </kw>
-<status status="PASS" starttime="20200724 18:27:29.604" endtime="20200724 18:27:33.147"></status>
+<status status="PASS" starttime="20200724 19:55:22.118" endtime="20200724 19:55:24.395"></status>
 </kw>
 <kw name="ใส่ข้อความ password">
 <arguments>
@@ -114,10 +114,10 @@
 <arg>password</arg>
 <arg>${Pass}</arg>
 </arguments>
-<msg timestamp="20200724 18:27:33.150" level="INFO">Typing text 'Phison1941' into text field 'password'.</msg>
-<status status="PASS" starttime="20200724 18:27:33.150" endtime="20200724 18:27:33.905"></status>
+<msg timestamp="20200724 19:55:24.396" level="INFO">Typing text 's0ul18plusS*' into text field 'password'.</msg>
+<status status="PASS" starttime="20200724 19:55:24.396" endtime="20200724 19:55:24.977"></status>
 </kw>
-<status status="PASS" starttime="20200724 18:27:33.147" endtime="20200724 18:27:33.905"></status>
+<status status="PASS" starttime="20200724 19:55:24.395" endtime="20200724 19:55:24.978"></status>
 </kw>
 <kw name="กดปุ่ม เข้าสู่ระบบ">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -125,10 +125,10 @@
 <arguments>
 <arg>เข้าสู่ระบบ</arg>
 </arguments>
-<msg timestamp="20200724 18:27:33.906" level="INFO">Clicking button 'เข้าสู่ระบบ'.</msg>
-<status status="PASS" starttime="20200724 18:27:33.906" endtime="20200724 18:27:34.420"></status>
+<msg timestamp="20200724 19:55:24.979" level="INFO">Clicking button 'เข้าสู่ระบบ'.</msg>
+<status status="PASS" starttime="20200724 19:55:24.979" endtime="20200724 19:55:25.382"></status>
 </kw>
-<status status="PASS" starttime="20200724 18:27:33.906" endtime="20200724 18:27:34.420"></status>
+<status status="PASS" starttime="20200724 19:55:24.978" endtime="20200724 19:55:25.383"></status>
 </kw>
 <kw name="รอ verify">
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
@@ -138,31 +138,242 @@
 <arg>(Pre-Order) Xiaomi iHealth Blood Pressure Monitor 2 - เครื่องวัดความดัน รุ่น 2</arg>
 <arg>30</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200724 18:28:04.756" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-37.png"&gt;&lt;img src="selenium-screenshot-37.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200724 18:28:04.432" endtime="20200724 18:28:04.756"></status>
+<status status="PASS" starttime="20200724 19:55:25.384" endtime="20200724 19:55:42.961"></status>
 </kw>
-<msg timestamp="20200724 18:28:04.767" level="FAIL">Element with locator '//*[@id="main"]/div/div[2]/div[2]/div[2]/div[2]/div[3]/div/div[1]/span' not found.</msg>
-<status status="FAIL" starttime="20200724 18:27:34.422" endtime="20200724 18:28:04.767"></status>
+<status status="PASS" starttime="20200724 19:55:25.383" endtime="20200724 19:55:42.962"></status>
 </kw>
-<status status="FAIL" starttime="20200724 18:27:34.421" endtime="20200724 18:28:04.768"></status>
+<kw name="กดปุ่ม &quot;ซื้อสินค้า&quot;">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>ซื้อสินค้า</arg>
+</arguments>
+<msg timestamp="20200724 19:55:42.964" level="INFO">Clicking button 'ซื้อสินค้า'.</msg>
+<status status="PASS" starttime="20200724 19:55:42.964" endtime="20200724 19:55:45.575"></status>
 </kw>
-<status status="FAIL" starttime="20200724 18:27:15.411" endtime="20200724 18:28:04.769"></status>
+<status status="PASS" starttime="20200724 19:55:42.963" endtime="20200724 19:55:45.576"></status>
 </kw>
-<status status="FAIL" starttime="20200724 18:27:15.405" endtime="20200724 18:28:04.770" critical="yes">Element with locator '//*[@id="main"]/div/div[2]/div[2]/div[2]/div[2]/div[3]/div/div[1]/span' not found.</status>
+<kw name="เช็คชื่อในรถเข็น">
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div[2]/div[2]/div[3]/div[1]/div[3]/div/div[2]/div/div/div[2]/div/div</arg>
+<arg>(Pre-Order) Xiaomi iHealth Blood Pressure Monitor 2 - เครื่องวัดความดัน รุ่น 2</arg>
+</arguments>
+<status status="PASS" starttime="20200724 19:55:45.577" endtime="20200724 19:55:48.205"></status>
+</kw>
+<status status="PASS" starttime="20200724 19:55:45.576" endtime="20200724 19:55:48.206"></status>
+</kw>
+<kw name="เช็คราคาต่อชิ้นในรถเข็น">
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div[2]/div[2]/div[3]/div[1]/div[3]/div/div[2]/div/div/div[4]</arg>
+<arg>฿11,160</arg>
+</arguments>
+<status status="PASS" starttime="20200724 19:55:48.206" endtime="20200724 19:55:48.460"></status>
+</kw>
+<status status="PASS" starttime="20200724 19:55:48.206" endtime="20200724 19:55:48.460"></status>
+</kw>
+<kw name="เช็คจำนวนในรถเข็น">
+<kw name="Get Value" library="SeleniumLibrary">
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div[2]/div[2]/div[3]/div[1]/div[3]/div/div[2]/div/div/div[5]/div[1]/input</arg>
+</arguments>
+<assign>
+<var>${amount}</var>
+</assign>
+<msg timestamp="20200724 19:55:49.173" level="INFO">${amount} = 1</msg>
+<status status="PASS" starttime="20200724 19:55:48.462" endtime="20200724 19:55:49.173"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${amount} == 1</arg>
+</arguments>
+<status status="PASS" starttime="20200724 19:55:49.174" endtime="20200724 19:55:49.175"></status>
+</kw>
+<status status="PASS" starttime="20200724 19:55:48.461" endtime="20200724 19:55:49.175"></status>
+</kw>
+<kw name="เช็คราคารวมในรถเข็น">
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div[2]/div[2]/div[3]/div[1]/div[3]/div/div[2]/div/div/div[6]</arg>
+<arg>฿11,160</arg>
+</arguments>
+<status status="PASS" starttime="20200724 19:55:49.177" endtime="20200724 19:55:49.398"></status>
+</kw>
+<status status="PASS" starttime="20200724 19:55:49.176" endtime="20200724 19:55:49.398"></status>
+</kw>
+<kw name="เช็ครวมค่าสินค้าในรถเข็น">
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div[2]/div[2]/div[3]/div[2]/div[7]/div[4]/div[1]/div/div[2]</arg>
+<arg>฿11,160</arg>
+</arguments>
+<status status="PASS" starttime="20200724 19:55:49.399" endtime="20200724 19:55:49.538"></status>
+</kw>
+<status status="PASS" starttime="20200724 19:55:49.398" endtime="20200724 19:55:49.538"></status>
+</kw>
+<kw name="กดปุ่มสั่งสินค้า">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div[2]/div[2]/div[3]/div[2]/div[7]/div[5]/button</arg>
+</arguments>
+<status status="PASS" starttime="20200724 19:55:49.539" endtime="20200724 19:55:49.637"></status>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div[2]/div[2]/div[3]/div[2]/div[7]/div[5]/button</arg>
+</arguments>
+<status status="PASS" starttime="20200724 19:55:49.637" endtime="20200724 19:55:49.670"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@class="cart-page-footer__checkout"]/button//span</arg>
+</arguments>
+<msg timestamp="20200724 19:55:49.671" level="INFO">Clicking element '//div[@class="cart-page-footer__checkout"]/button//span'.</msg>
+<status status="PASS" starttime="20200724 19:55:49.670" endtime="20200724 19:55:49.956"></status>
+</kw>
+<status status="PASS" starttime="20200724 19:55:49.539" endtime="20200724 19:55:49.956"></status>
+</kw>
+<kw name="เช็คราคารายการย่อย">
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div[2]/div[3]/div[2]/div[2]/div/div[1]/div/div[2]/div/div[5]</arg>
+<arg>฿11,160</arg>
+<arg>20</arg>
+</arguments>
+<status status="PASS" starttime="20200724 19:55:49.957" endtime="20200724 19:55:51.723"></status>
+</kw>
+<status status="PASS" starttime="20200724 19:55:49.956" endtime="20200724 19:55:51.723"></status>
+</kw>
+<kw name="เช็คราคาสินค้า">
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div[2]/div[3]/div[2]/div[2]/div/div[2]/div[2]/div[6]</arg>
+<arg>฿50</arg>
+<arg>20</arg>
+</arguments>
+<status status="PASS" starttime="20200724 19:55:51.724" endtime="20200724 19:55:52.043"></status>
+</kw>
+<status status="PASS" starttime="20200724 19:55:51.723" endtime="20200724 19:55:52.043"></status>
+</kw>
+<kw name="เช็คยอดสั่งซื้อทั้งหมด">
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div[2]/div[3]/div[2]/div[2]/div/div[3]/div[2]</arg>
+<arg>฿11,210</arg>
+<arg>20</arg>
+</arguments>
+<status status="PASS" starttime="20200724 19:55:52.044" endtime="20200724 19:55:52.124"></status>
+</kw>
+<status status="PASS" starttime="20200724 19:55:52.043" endtime="20200724 19:55:52.124"></status>
+</kw>
+<kw name="กดปุ่ม iBanking">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>iBanking / Mobile Banking</arg>
+</arguments>
+<msg timestamp="20200724 19:55:52.124" level="INFO">Clicking button 'iBanking / Mobile Banking'.</msg>
+<status status="PASS" starttime="20200724 19:55:52.124" endtime="20200724 19:55:52.454"></status>
+</kw>
+<status status="PASS" starttime="20200724 19:55:52.124" endtime="20200724 19:55:52.454"></status>
+</kw>
+<kw name="เช็คธนาคารว่าครบหรือไม่">
+<kw name="เช็คว่ามีธนาคารกรุงเทพหรือไม่">
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div[2]/div[3]/div[4]/div[1]/div/div[2]/div[1]/div[2]/div[1]/div/div[2]/div/div/div[2]/div[1]</arg>
+<arg>ธนาคารกรุงเทพ</arg>
+</arguments>
+<status status="PASS" starttime="20200724 19:55:52.456" endtime="20200724 19:55:52.752"></status>
+</kw>
+<status status="PASS" starttime="20200724 19:55:52.455" endtime="20200724 19:55:52.753"></status>
+</kw>
+<kw name="เช็คว่ามีธนาคารกรุงไทยหรือไม่">
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div[2]/div[3]/div[4]/div[1]/div/div[2]/div[1]/div[2]/div[2]/div/div[2]/div/div/div[2]/div[1]</arg>
+<arg>ธนาคารกรุงไทย</arg>
+</arguments>
+<status status="PASS" starttime="20200724 19:55:52.753" endtime="20200724 19:55:52.836"></status>
+</kw>
+<status status="PASS" starttime="20200724 19:55:52.753" endtime="20200724 19:55:52.837"></status>
+</kw>
+<kw name="เช็คว่ามีธนาคารไทยพาณิชย์หรือไม่">
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div[2]/div[3]/div[4]/div[1]/div/div[2]/div[1]/div[2]/div[3]/div/div[2]/div/div/div[2]/div[1]</arg>
+<arg>ธนาคารไทยพาณิชย์</arg>
+</arguments>
+<status status="PASS" starttime="20200724 19:55:52.837" endtime="20200724 19:55:52.913"></status>
+</kw>
+<status status="PASS" starttime="20200724 19:55:52.837" endtime="20200724 19:55:52.913"></status>
+</kw>
+<kw name="เช็คว่ามีธนาคารกสิกรไทยพาหรือไม่">
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div[2]/div[3]/div[4]/div[1]/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div/div[2]/div[1]</arg>
+<arg>ธนาคารกสิกรไทย</arg>
+</arguments>
+<status status="PASS" starttime="20200724 19:55:52.914" endtime="20200724 19:55:53.002"></status>
+</kw>
+<status status="PASS" starttime="20200724 19:55:52.913" endtime="20200724 19:55:53.002"></status>
+</kw>
+<kw name="เช็คว่ามีธนาคารกรุงศรีหรือไม่">
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div[2]/div[3]/div[4]/div[1]/div/div[2]/div[3]/div[2]/div/div/div[2]/div/div/div[2]/div[1]</arg>
+<arg>ธนาคารกรุงศรี</arg>
+</arguments>
+<status status="PASS" starttime="20200724 19:55:53.003" endtime="20200724 19:55:53.087"></status>
+</kw>
+<status status="PASS" starttime="20200724 19:55:53.002" endtime="20200724 19:55:53.087"></status>
+</kw>
+<status status="PASS" starttime="20200724 19:55:52.454" endtime="20200724 19:55:53.087"></status>
+</kw>
+<kw name="เช็คราคาการชำระเงินทั้งหมด">
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div[2]/div[3]/div[4]/div[2]/div[6]</arg>
+<arg>฿11,210</arg>
+</arguments>
+<status status="PASS" starttime="20200724 19:55:53.088" endtime="20200724 19:55:53.164"></status>
+</kw>
+<status status="PASS" starttime="20200724 19:55:53.087" endtime="20200724 19:55:53.165"></status>
+</kw>
+<status status="PASS" starttime="20200724 19:55:08.613" endtime="20200724 19:55:53.165"></status>
+</kw>
+<status status="PASS" starttime="20200724 19:55:08.610" endtime="20200724 19:55:53.166" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20200724 18:27:14.897" endtime="20200724 18:28:04.780"></status>
+<status status="PASS" starttime="20200724 19:55:08.158" endtime="20200724 19:55:53.172"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="Shopee">Shopee</stat>
+<stat pass="1" fail="0" id="s1" name="Shopee">Shopee</stat>
 </suite>
 </statistics>
 <errors>
