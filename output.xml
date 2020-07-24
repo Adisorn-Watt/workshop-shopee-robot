@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200724 15:40:57.636" rpa="false">
 <suite id="s1" name="Shopee" source="C:\Users\chatchanokwon\Desktop\workshop-shopee-robot-master\shopee.robot">
 <test id="s1-t1" name="เช็คในตะกร้า">
 <kw name="เปิด shoppee" type="setup">
+=======
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200724 15:30:00.879" rpa="false">
+<suite id="s1" name="Shopee" source="C:\Users\phisonkha\Desktop\Allianz traning\Test workshop\workshop-shopee-robot\shopee.robot">
+<test id="s1-t1" name="ซื้อของจาก shopee ด้วยชื่อ phison">
+<kw name="ซื้อของจาก shopee">
+<arguments>
+<arg>phisonk@hotmail.com</arg>
+<arg>1234</arg>
+</arguments>
+<kw name="เปิดเว็บ">
+>>>>>>> 8ab9596c7e82c5cd4b59b0e6944887e2917e4080
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
 <arg>${URL}</arg>
+<<<<<<< HEAD
 <arg>Chrome</arg>
 </arguments>
 <msg timestamp="20200724 15:40:57.931" level="INFO">Opening browser 'Chrome' to base url 'https://shopee.co.th/shopping_cart/?itemIds=1307643368&amp;shopId=8172430'.</msg>
@@ -46,11 +59,45 @@
 <total>
 <stat pass="0" fail="1">Critical Tests</stat>
 <stat pass="0" fail="1">All Tests</stat>
+=======
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200724 15:30:01.342" level="INFO">Opening browser 'chrome' to base url 'https://shopee.co.th/(Pre-Order)-Xiaomi-iHealth-Blood-Pressure-Monitor-2-%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%94%E0%B8%B1%E0%B8%99-%E0%B8%A3%E0%B8%B8%E0%B9%88%E0%B8%99-2-i.8172430.1307643368'.</msg>
+<status status="PASS" starttime="20200724 15:30:01.341" endtime="20200724 15:30:08.269"></status>
+</kw>
+<status status="PASS" starttime="20200724 15:30:01.340" endtime="20200724 15:30:08.269"></status>
+</kw>
+<kw name="เช็คว่าชื่อของที่จะค้นหาตรงไหม">
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div[2]/div[2]/div[2]/div[2]/div[3]/div/div[1]/span</arg>
+<arg>(Pre-Order) Xiaomi iHealth Blood Pressure Monitor 2 - เครื่องวัดความดัน รุ่น 2</arg>
+</arguments>
+<status status="PASS" starttime="20200724 15:30:08.269" endtime="20200724 15:30:12.334"></status>
+</kw>
+<status status="PASS" starttime="20200724 15:30:08.269" endtime="20200724 15:30:12.334"></status>
+</kw>
+<status status="PASS" starttime="20200724 15:30:01.339" endtime="20200724 15:30:12.335"></status>
+</kw>
+<status status="PASS" starttime="20200724 15:30:01.337" endtime="20200724 15:30:12.335" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200724 15:30:00.885" endtime="20200724 15:30:12.338"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+>>>>>>> 8ab9596c7e82c5cd4b59b0e6944887e2917e4080
 </total>
 <tag>
 </tag>
 <suite>
+<<<<<<< HEAD
 <stat pass="0" fail="1" id="s1" name="Shopee">Shopee</stat>
+=======
+<stat pass="1" fail="0" id="s1" name="Shopee">Shopee</stat>
+>>>>>>> 8ab9596c7e82c5cd4b59b0e6944887e2917e4080
 </suite>
 </statistics>
 <errors>
