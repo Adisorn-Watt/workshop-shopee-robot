@@ -14,9 +14,29 @@ Test Template    ซื้อของจาก shopee
     [Arguments]    ${Username}    ${Pass}
     เปิดเว็บ
     เช็คว่าชื่อของที่จะค้นหาตรงไหม
+    กดปุ่ม "ซื้อสินค้า"
+    ใส่ข้อความ Username
+    ใส่ข้อความ password
+    กดปุ่ม เข้าสู่ระบบ
+
 เปิดเว็บ
     Open Browser    ${URL}    chrome
 ปิดเว็บ
     Close Browser
 เช็คว่าชื่อของที่จะค้นหาตรงไหม
     Wait Until Element Contains    //*[@id="main"]/div/div[2]/div[2]/div[2]/div[2]/div[3]/div/div[1]/span    (Pre-Order) Xiaomi iHealth Blood Pressure Monitor 2 - เครื่องวัดความดัน รุ่น 2
+
+# Mind
+กดปุ่ม "ซื้อสินค้า"
+    Click Button    ซื้อสินค้า
+
+ใส่ข้อความ Username
+    [Arguments]    ${Username}
+    Input Text    loginKey    ${Username}
+
+ใส่ข้อความ password
+    [Arguments]    ${Pass}
+    Input Text   password    ${Pass}
+
+กดปุ่ม เข้าสู่ระบบ
+    Click Button    เข้าสู่ระบบ
