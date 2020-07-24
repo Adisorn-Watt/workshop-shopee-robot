@@ -21,9 +21,11 @@ Test Template    ซื้อของจาก shopee
     เช็คราคาสินค้าในหน้าสินค้า
     เช็คชื่อร้านค้า
     กดปุ่ม "ซื้อสินค้า"
-    ใส่ข้อความ Username
-    ใส่ข้อความ password
+    ใส่ข้อความ Username    ${Username}
+    ใส่ข้อความ password    ${Pass}
     กดปุ่ม เข้าสู่ระบบ
+    รอ verify
+    กดปุ่ม "ซื้อสินค้า"
     เช็คชื่อในรถเข็น
     เช็คราคาต่อชิ้นในรถเข็น
     เช็คจำนวนในรถเข็น
@@ -65,6 +67,9 @@ Test Template    ซื้อของจาก shopee
 
 กดปุ่ม เข้าสู่ระบบ
     Click Button    เข้าสู่ระบบ
+#ขวัญเพิ่มจ้า
+รอ verify
+    Wait Until Element Contains    //*[@id="main"]/div/div[2]/div[2]/div[2]/div[2]/div[3]/div/div[1]/span    (Pre-Order) Xiaomi iHealth Blood Pressure Monitor 2 - เครื่องวัดความดัน รุ่น 2    30
 
 #  โค้ดน้องเกรซ
 เช็คชื่อในรถเข็น
@@ -74,7 +79,8 @@ Test Template    ซื้อของจาก shopee
     Wait Until Element Contains    //*[@id="main"]/div/div[2]/div[2]/div[3]/div[1]/div[3]/div/div[2]/div/div/div[4]    ฿11,160
 
 เช็คจำนวนในรถเข็น
-    Wait Until Element Contains    //*[@id="main"]/div/div[2]/div[2]/div[3]/div[1]/div[3]/div/div[2]/div/div/div[5]/div[1]/input    1
+    ${amount} =    Get Value    //*[@id="main"]/div/div[2]/div[2]/div[3]/div[1]/div[3]/div/div[2]/div/div/div[5]/div[1]/input
+    Should Be True    ${amount} == 1
 
 เช็คราคารวมในรถเข็น
     Wait Until Element Contains    //*[@id="main"]/div/div[2]/div[2]/div[3]/div[1]/div[3]/div/div[2]/div/div/div[6]    ฿11,160
@@ -84,12 +90,14 @@ Test Template    ซื้อของจาก shopee
 เช็ครวมค่าสินค้าในรถเข็น
     Wait Until Element Contains    //*[@id="main"]/div/div[2]/div[2]/div[3]/div[2]/div[7]/div[4]/div[1]/div/div[2]    ฿11,160
     
-กดปุ่มสั่งสินค้า 
-    Press Keys    //*[@id="main"]/div/div[2]/div[2]/div[3]/div[2]/div[7]/div[5]/button    ENTER
+กดปุ่มสั่งสินค้า
+    Wait Until Element Is Visible    //*[@id="main"]/div/div[2]/div[2]/div[3]/div[2]/div[7]/div[5]/button
+    Set Focus To Element    //*[@id="main"]/div/div[2]/div[2]/div[3]/div[2]/div[7]/div[5]/button
+    Click Element    //div[@class="shopee-button-solid shopee-button-solid--primary"]//button
 
 เช็คราคารายการย่อย
     Wait Until Element Contains    //*[@id="main"]/div/div[2]/div[3]/div[2]/div[2]/div/div[1]/div/div[2]/div/div[5]    ฿11,160
 
 เช็คราคาสินค้า
-    Wait Until Element Contains    //*[@id="main"]/div/div[2]/div[3]/div[2]/div[2]/div/div[2]/div[2]/div[6]    ฿50
+    Wait Until Element Contains    //*[@id="main"]/div/div[2]/div[3]/div[2]/div[2]/div/div[2]/div[2]/div[6]    ฿10
 
