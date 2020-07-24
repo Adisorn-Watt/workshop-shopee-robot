@@ -112,7 +112,7 @@ ${URL}    https://shopee.co.th/(Pre-Order)-Xiaomi-iHealth-Blood-Pressure-Monitor
     เช็คว่ามีธนาคารกรุงเทพหรือไม่
     เช็คว่ามีธนาคารกรุงไทยหรือไม่
     เช็คว่ามีธนาคารไทยพาณิชย์หรือไม่
-    เช็คว่ามีธนาคารกสิกรไทยพาหรือไม่
+    เช็คว่ามีธนาคารกสิกรไทยหรือไม่
     เช็คว่ามีธนาคารกรุงศรีหรือไม่
 
 เช็คว่ามีธนาคารกรุงเทพหรือไม่
@@ -121,7 +121,7 @@ ${URL}    https://shopee.co.th/(Pre-Order)-Xiaomi-iHealth-Blood-Pressure-Monitor
     Wait Until Element Contains    //*[@id="main"]/div/div[2]/div[3]/div[4]/div[1]/div/div[2]/div[1]/div[2]/div[2]/div/div[2]/div/div/div[2]/div[1]    ธนาคารกรุงไทย
 เช็คว่ามีธนาคารไทยพาณิชย์หรือไม่
     Wait Until Element Contains    //*[@id="main"]/div/div[2]/div[3]/div[4]/div[1]/div/div[2]/div[1]/div[2]/div[3]/div/div[2]/div/div/div[2]/div[1]    ธนาคารไทยพาณิชย์
-เช็คว่ามีธนาคารกสิกรไทยพาหรือไม่
+เช็คว่ามีธนาคารกสิกรไทยหรือไม่
     Wait Until Element Contains    //*[@id="main"]/div/div[2]/div[3]/div[4]/div[1]/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div/div[2]/div[1]    ธนาคารกสิกรไทย
 เช็คว่ามีธนาคารกรุงศรีหรือไม่
     Wait Until Element Contains    //*[@id="main"]/div/div[2]/div[3]/div[4]/div[1]/div/div[2]/div[3]/div[2]/div/div/div[2]/div/div/div[2]/div[1]    ธนาคารกรุงศรี
@@ -129,3 +129,4 @@ ${URL}    https://shopee.co.th/(Pre-Order)-Xiaomi-iHealth-Blood-Pressure-Monitor
 เช็คราคาการชำระเงินทั้งหมด
     Wait Until Element Contains    //*[@id="main"]/div/div[2]/div[3]/div[4]/div[2]/div[6]    ฿11,210
     Set Selenium Implicit Wait    5   #set waiting time before close browser
+
