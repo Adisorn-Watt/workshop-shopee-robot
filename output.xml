@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200724 16:14:23.632" rpa="false">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200724 15:40:57.636" rpa="false">
+<suite id="s1" name="Shopee" source="C:\Users\chatchanokwon\Desktop\workshop-shopee-robot-master\shopee.robot">
+<test id="s1-t1" name="เช็คในตะกร้า">
+<kw name="เปิด shoppee" type="setup">
+=======
 <robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200724 15:30:00.879" rpa="false">
+>>>>>>> 1ce1852083dc00ea26cd046521a7e9116892139d
 <suite id="s1" name="Shopee" source="C:\Users\phisonkha\Desktop\Allianz traning\Test workshop\workshop-shopee-robot\shopee.robot">
+=======
+<robot generator="Robot 3.2.1 (Python 3.8.4 on win32)" generated="20200724 15:56:57.498" rpa="false">
+<suite id="s1" name="Shopee" source="C:\Users\chutimoncha\Desktop\workshop-shopee-robot\shopee.robot">
+>>>>>>> c1607ea6e4b23bc6a183d582acdc35a91c16a5a7
+=======
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200724 16:14:09.345" rpa="false">
+<suite id="s1" name="Shopee" source="C:\Users\anchisatea\Documents\Robot_shoppee\workshop-shopee-robot\shopee.robot">
+>>>>>>> cfe581a0e6a7d2e34052166911614c2d27696bb5
 <test id="s1-t1" name="ซื้อของจาก shopee ด้วยชื่อ phison">
 <kw name="ซื้อของจาก shopee">
 <arguments>
@@ -14,10 +34,42 @@
 <arg>${URL}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200724 15:30:01.342" level="INFO">Opening browser 'chrome' to base url 'https://shopee.co.th/(Pre-Order)-Xiaomi-iHealth-Blood-Pressure-Monitor-2-%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%94%E0%B8%B1%E0%B8%99-%E0%B8%A3%E0%B8%B8%E0%B9%88%E0%B8%99-2-i.8172430.1307643368'.</msg>
-<status status="PASS" starttime="20200724 15:30:01.341" endtime="20200724 15:30:08.269"></status>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<msg timestamp="20200724 16:14:24.009" level="INFO">Opening browser 'chrome' to base url 'https://shopee.co.th/(Pre-Order)-Xiaomi-iHealth-Blood-Pressure-Monitor-2-%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%94%E0%B8%B1%E0%B8%99-%E0%B8%A3%E0%B8%B8%E0%B9%88%E0%B8%99-2-i.8172430.1307643368'.</msg>
+<status status="PASS" starttime="20200724 16:14:24.008" endtime="20200724 16:14:29.647"></status>
 </kw>
-<status status="PASS" starttime="20200724 15:30:01.340" endtime="20200724 15:30:08.269"></status>
+<status status="PASS" starttime="20200724 16:14:24.008" endtime="20200724 16:14:29.647"></status>
+</kw>
+<kw name="กดเลือกภาษา">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>//*[@id="modal"]/div[1]/div[1]/div/div[3]/div[1]/button</arg>
+</arguments>
+<status status="PASS" starttime="20200724 16:14:29.648" endtime="20200724 16:14:30.481"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="modal"]/div[1]/div[1]/div/div[3]/div[1]/button</arg>
+</arguments>
+<msg timestamp="20200724 16:14:30.482" level="INFO">Clicking element '//*[@id="modal"]/div[1]/div[1]/div/div[3]/div[1]/button'.</msg>
+<status status="PASS" starttime="20200724 16:14:30.481" endtime="20200724 16:14:32.935"></status>
+</kw>
+<status status="PASS" starttime="20200724 16:14:29.647" endtime="20200724 16:14:32.936"></status>
+=======
+<msg timestamp="20200724 15:56:57.750" level="INFO">Opening browser 'chrome' to base url 'https://shopee.co.th/(Pre-Order)-Xiaomi-iHealth-Blood-Pressure-Monitor-2-%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%94%E0%B8%B1%E0%B8%99-%E0%B8%A3%E0%B8%B8%E0%B9%88%E0%B8%99-2-i.8172430.1307643368'.</msg>
+<status status="PASS" starttime="20200724 15:56:57.750" endtime="20200724 15:57:02.363"></status>
+</kw>
+<status status="PASS" starttime="20200724 15:56:57.750" endtime="20200724 15:57:02.364"></status>
+>>>>>>> 1ce1852083dc00ea26cd046521a7e9116892139d
+=======
+<msg timestamp="20200724 16:14:09.898" level="INFO">Opening browser 'chrome' to base url 'https://shopee.co.th/(Pre-Order)-Xiaomi-iHealth-Blood-Pressure-Monitor-2-%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%94%E0%B8%B1%E0%B8%99-%E0%B8%A3%E0%B8%B8%E0%B9%88%E0%B8%99-2-i.8172430.1307643368'.</msg>
+<status status="PASS" starttime="20200724 16:14:09.897" endtime="20200724 16:14:16.072"></status>
+</kw>
+<status status="PASS" starttime="20200724 16:14:09.895" endtime="20200724 16:14:16.072"></status>
+>>>>>>> cfe581a0e6a7d2e34052166911614c2d27696bb5
 </kw>
 <kw name="เช็คว่าชื่อของที่จะค้นหาตรงไหม">
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
@@ -26,25 +78,96 @@
 <arg>//*[@id="main"]/div/div[2]/div[2]/div[2]/div[2]/div[3]/div/div[1]/span</arg>
 <arg>(Pre-Order) Xiaomi iHealth Blood Pressure Monitor 2 - เครื่องวัดความดัน รุ่น 2</arg>
 </arguments>
-<status status="PASS" starttime="20200724 15:30:08.269" endtime="20200724 15:30:12.334"></status>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<status status="PASS" starttime="20200724 16:14:32.937" endtime="20200724 16:14:33.291"></status>
 </kw>
-<status status="PASS" starttime="20200724 15:30:08.269" endtime="20200724 15:30:12.334"></status>
+<status status="PASS" starttime="20200724 16:14:32.936" endtime="20200724 16:14:33.291"></status>
 </kw>
-<status status="PASS" starttime="20200724 15:30:01.339" endtime="20200724 15:30:12.335"></status>
+<kw name="เช็คราคาสินค้าในหน้าสินค้า">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div[2]/div[2]/div[2]/div[2]/div[3]/div/div[3]/div/div/div/div/div/div</arg>
+</arguments>
+<status status="PASS" starttime="20200724 16:14:33.292" endtime="20200724 16:14:33.503"></status>
 </kw>
-<status status="PASS" starttime="20200724 15:30:01.337" endtime="20200724 15:30:12.335" critical="yes"></status>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div[2]/div[2]/div[2]/div[2]/div[3]/div/div[3]/div/div/div/div/div/div</arg>
+<arg>฿11,160</arg>
+</arguments>
+<msg timestamp="20200724 16:14:33.504" level="INFO">Verifying element '//*[@id="main"]/div/div[2]/div[2]/div[2]/div[2]/div[3]/div/div[3]/div/div/div/div/div/div' contains exact text '฿11,160'.</msg>
+<status status="PASS" starttime="20200724 16:14:33.503" endtime="20200724 16:14:34.285"></status>
+</kw>
+<status status="PASS" starttime="20200724 16:14:33.292" endtime="20200724 16:14:34.286"></status>
+</kw>
+<kw name="เช็คชื่อร้านค้า">
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<arguments>
+<arg>//*[@id="main"]/div/div[2]/div[2]/div[2]/div[3]/div[1]/div[1]/div/div[1]</arg>
+<arg>pumper2500</arg>
+</arguments>
+<status status="PASS" starttime="20200724 16:14:34.287" endtime="20200724 16:14:34.502"></status>
+</kw>
+<status status="PASS" starttime="20200724 16:14:34.286" endtime="20200724 16:14:34.502"></status>
+</kw>
+<status status="PASS" starttime="20200724 16:14:24.008" endtime="20200724 16:14:34.502"></status>
+</kw>
+<status status="PASS" starttime="20200724 16:14:24.005" endtime="20200724 16:14:34.503" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200724 15:30:00.885" endtime="20200724 15:30:12.338"></status>
+<status status="PASS" starttime="20200724 16:14:23.636" endtime="20200724 16:14:34.507"></status>
+=======
+<status status="PASS" starttime="20200724 15:57:02.364" endtime="20200724 15:57:03.941"></status>
+=======
+<status status="PASS" starttime="20200724 16:14:16.073" endtime="20200724 16:14:19.858"></status>
+>>>>>>> cfe581a0e6a7d2e34052166911614c2d27696bb5
+</kw>
+<status status="PASS" starttime="20200724 16:14:16.072" endtime="20200724 16:14:19.859"></status>
+</kw>
+<kw name="กดปุ่ม &quot;ซื้อสินค้า&quot;">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>ซื้อสินค้า</arg>
+</arguments>
+<msg timestamp="20200724 16:14:19.860" level="INFO">Clicking button 'ซื้อสินค้า'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200724 16:14:22.664" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200724 16:14:22.159" endtime="20200724 16:14:22.664"></status>
+</kw>
+<msg timestamp="20200724 16:14:22.679" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="button" class="btn btn-solid-primary btn--l YtgjXY" aria-disabled="false"&gt;...&lt;/button&gt; is not clickable at point (805, 512). Other element would receive the click: &lt;div class="shopee-modal__overlay"&gt;&lt;/div&gt;
+  (Session info: chrome=84.0.4147.89)
+</msg>
+<status status="FAIL" starttime="20200724 16:14:19.860" endtime="20200724 16:14:22.680"></status>
+</kw>
+<status status="FAIL" starttime="20200724 16:14:19.859" endtime="20200724 16:14:22.680"></status>
+</kw>
+<status status="FAIL" starttime="20200724 16:14:09.894" endtime="20200724 16:14:22.681"></status>
+</kw>
+<status status="FAIL" starttime="20200724 16:14:09.890" endtime="20200724 16:14:22.682" critical="yes">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button type="button" class="btn btn-solid-primary btn--l YtgjXY" aria-disabled="false"&gt;...&lt;/button&gt; is not clickable at point (805, 512). Other element would receive the click: &lt;div class="shopee-modal__overlay"&gt;&lt;/div&gt;
+  (Session info: chrome=84.0.4147.89)
+</status>
+</test>
+<<<<<<< HEAD
+<status status="FAIL" starttime="20200724 15:56:57.502" endtime="20200724 15:57:06.097"></status>
+>>>>>>> 1ce1852083dc00ea26cd046521a7e9116892139d
+=======
+<status status="FAIL" starttime="20200724 16:14:09.352" endtime="20200724 16:14:22.695"></status>
+>>>>>>> cfe581a0e6a7d2e34052166911614c2d27696bb5
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Shopee">Shopee</stat>
+<stat pass="0" fail="1" id="s1" name="Shopee">Shopee</stat>
 </suite>
 </statistics>
 <errors>
