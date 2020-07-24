@@ -35,7 +35,7 @@ Test Template    ซื้อของจาก shopee
 เช็คว่าชื่อของที่จะค้นหาตรงไหม
     Wait Until Element Contains    //*[@id="main"]/div/div[2]/div[2]/div[2]/div[2]/div[3]/div/div[1]/span    (Pre-Order) Xiaomi iHealth Blood Pressure Monitor 2 - เครื่องวัดความดัน รุ่น 2
 
-# Mind
+# มายจ้า
 กดปุ่ม "ซื้อสินค้า"
     Click Button    ซื้อสินค้า
 
