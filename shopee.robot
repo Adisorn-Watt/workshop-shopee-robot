@@ -10,13 +10,31 @@ Test Template    ซื้อของจาก shopee
 
 
 *** Keywords ***
+
+# Phison
+
 ซื้อของจาก shopee
     [Arguments]    ${Username}    ${Pass}
     เปิดเว็บ
+    กดเลือกภาษา
     เช็คว่าชื่อของที่จะค้นหาตรงไหม
+    เช็คราคาสินค้าในหน้าสินค้า
+    เช็คชื่อร้านค้า
+
 เปิดเว็บ
     Open Browser    ${URL}    chrome
+
 ปิดเว็บ
     Close Browser
+กดเลือกภาษา
+    Wait Until Page Contains Element   //*[@id="modal"]/div[1]/div[1]/div/div[3]/div[1]/button
+    Click Element    //*[@id="modal"]/div[1]/div[1]/div/div[3]/div[1]/button
 เช็คว่าชื่อของที่จะค้นหาตรงไหม
     Wait Until Element Contains    //*[@id="main"]/div/div[2]/div[2]/div[2]/div[2]/div[3]/div/div[1]/span    (Pre-Order) Xiaomi iHealth Blood Pressure Monitor 2 - เครื่องวัดความดัน รุ่น 2
+
+เช็คราคาสินค้าในหน้าสินค้า
+    Wait Until Page Contains Element    //*[@id="main"]/div/div[2]/div[2]/div[2]/div[2]/div[3]/div/div[3]/div/div/div/div/div/div
+    Element Text Should Be    //*[@id="main"]/div/div[2]/div[2]/div[2]/div[2]/div[3]/div/div[3]/div/div/div/div/div/div    ฿11,160
+
+เช็คชื่อร้านค้า
+    Wait Until Element Contains    //*[@id="main"]/div/div[2]/div[2]/div[2]/div[3]/div[1]/div[1]/div/div[1]    pumper2500
