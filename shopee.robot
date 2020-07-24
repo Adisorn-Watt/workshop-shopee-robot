@@ -28,6 +28,11 @@ Test Template    ซื้อของจาก shopee
     เช็คราคาต่อชิ้นในรถเข็น
     เช็คจำนวนในรถเข็น
     เช็คราคารวมในรถเข็น
+    เช็ครวมค่าสินค้าในรถเข็น
+    กดปุ่มสั่งสินค้า
+    เช็คราคารายการย่อย
+    เช็คราคาสินค้า
+    
 
 เปิดเว็บ
     Open Browser    ${URL}    chrome
@@ -73,4 +78,18 @@ Test Template    ซื้อของจาก shopee
 
 เช็คราคารวมในรถเข็น
     Wait Until Element Contains    //*[@id="main"]/div/div[2]/div[2]/div[3]/div[1]/div[3]/div/div[2]/div/div/div[6]    ฿11,160
+
+# ฟ้าเอง
+
+เช็ครวมค่าสินค้าในรถเข็น
+    Wait Until Element Contains    //*[@id="main"]/div/div[2]/div[2]/div[3]/div[2]/div[7]/div[4]/div[1]/div/div[2]    ฿11,160
+    
+กดปุ่มสั่งสินค้า 
+    Press Keys    //*[@id="main"]/div/div[2]/div[2]/div[3]/div[2]/div[7]/div[5]/button    ENTER
+
+เช็คราคารายการย่อย
+    Wait Until Element Contains    //*[@id="main"]/div/div[2]/div[3]/div[2]/div[2]/div/div[1]/div/div[2]/div/div[5]    ฿11,160
+
+เช็คราคาสินค้า
+    Wait Until Element Contains    //*[@id="main"]/div/div[2]/div[3]/div[2]/div[2]/div/div[2]/div[2]/div[6]    ฿50
 
